@@ -1,10 +1,5 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-# output = web_search("Latest news on AI research")
-# print(output)
+topic = "The impact of AI on the job market in 2026"
 
-# results = scrape_url("https://www.artificialintelligence-news.com/")
-# print(results)
-
-result = web_search.invoke("What is the latest research on using AI for climate change mitigation?")
-print(result)
+run_research_pipeline(topic)
